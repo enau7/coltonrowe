@@ -1,0 +1,171 @@
+\documentclass[10pt]{article} % Reduced font size
+\usepackage[margin=0.75in]{geometry} % Reduced margins
+\usepackage{enumitem}
+\usepackage{scrextend}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{parskip}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+
+% Set global itemsep for itemize environments
+\setlist{itemsep=-0.5em}
+
+\begin{document}
+
+\begin{minipage}[b]{0.48\textwidth}
+    {\LARGE \textbf{Colton Rowe}}
+\end{minipage}
+\begin{minipage}[b]{0.48\textwidth}
+    \raggedleft
+    Phone: (707) 799-2363 \\
+    Email: \href{mailto:coltonrowe@g.ucla.edu}{coltonrowe@g.ucla.edu} \\
+    \href{https://linkedin.com/in/coltonrowe/}{linkedin.com/in/coltonrowe/}
+\end{minipage}
+
+\vspace{-1em}
+\section*{EDUCATION}\vspace{-2em}
+\noindent\rule{\textwidth}{1pt}\vspace{-0.5em}
+
+\textbf{Master of Engineering}, University of California, Los Angeles, Los Angeles CA \hfill Expected August 2025 \\
+Concentration in Artificial Intelligence.
+
+\textbf{Bachelor of Science}, University of California, Santa Barbara, Santa Barbara CA \hfill March 2024 \\
+Double major in Statistics and Data Science (BS) and Mathematics (BS).
+
+\vspace{-1em}
+\section*{EXPERIENCE}\vspace{-2em}
+\noindent\rule{\textwidth}{1pt}\vspace{-0.5em}
+
+\textbf{iDox.ai} UCLA Capstone \hfill May 2025 -- Present \\ % August 2025
+\textit{Capstone Project Leader}
+\vspace{-0.5em}
+\begin{addmargin}[1em]{0em}
+\begin{itemize}[leftmargin=*]
+    \item Developing an AI Agent embedded in a Chrome extension to detect and redact sensitive information.
+\end{itemize}
+\end{addmargin}
+
+\textbf{Data Science Collaborative} UCSB RCO \hfill March 2023 -- May 2024 \\
+\textit{Vice President}
+\vspace{-0.5em}
+\begin{addmargin}[1em]{0em}
+\begin{itemize}[leftmargin=*]
+    \item Managed a group of over 10 staff while planning weekly community events and workshops.
+    \item Guided more than 30 students in creating personal data science projects.
+    \item Developed and presented five skill-building lectures for statistics undergraduates.
+\end{itemize}
+\end{addmargin}
+
+\textbf{Campus Learning Assistive Services} UCSB \hfill September 2023 -- March 2024 \\
+\textit{Math Tutor}
+\vspace{-0.5em}
+\begin{addmargin}[1em]{0em}
+\begin{itemize}[leftmargin=*]
+    \item Tutored dozens of math students; specialized in over eight classes including calculus and linear algebra.
+    \item Devoted 8--10 hours weekly to support tutees' academic success.
+\end{itemize}
+\end{addmargin}
+
+\vspace{-1em}
+\section*{PROJECTS}\vspace{-2em}
+\noindent\rule{\textwidth}{1pt}\vspace{-0.5em}
+
+\textbf{Metadrive PPO Oblation Study} \hfill January 2025 -- March 2025 \\
+\textit{Pytorch, Metadrive}
+\vspace{-0.5em}
+\begin{addmargin}[1em]{0em}
+\begin{itemize}[leftmargin=*]
+    \item Used Proximal Policy Optimization (PPO) to train autonomous driving agents in Metadrive environments.
+    \item Maximized route completion while tuning hyperparameters like scenario count, clip range, and reward shaping.
+    \item The best agent achieved 88\% route completion and 70\% success rate.
+\end{itemize}
+\end{addmargin}
+
+\textbf{sEMG Keystroke Decoding} \hfill January 2025 -- March 2025 \\
+\textit{Pytorch, Stable-Baselines3}
+\vspace{-0.5em}
+\begin{addmargin}[1em]{0em}
+\begin{itemize}[leftmargin=*]
+    \item Compared CNN, RNN, and LSTM hybrid models for keystroke decoding from sEMG using Stable-Baselines3.
+    \item Found that the baseline CNN model outperformed the hybrid models, achieving a character error rate of 21.82.
+\end{itemize}
+\end{addmargin}
+
+\textbf{TV and Movie Popularity Prediction} \hfill April 2023 -- June 2023 \\
+\textit{Python, Streamlit} — \href{https://tv-popularity.netlify.app/}{tv-popularity.netlify.app}
+\vspace{-0.5em}
+\begin{addmargin}[1em]{0em}
+\begin{itemize}[leftmargin=*]
+    \item Built a predictive web app using Streamlit and Scikit-learn to estimate IMDb ratings.
+    \item Scraped and parsed thousands of entries from Kaggle and IMDb.
+    \item Engineered features to train a random forest, KNN, decision tree, and beta regression with an RMSE $\approx$ .197.
+    \item Enabled users to input show attributes and receive a predicted popularity score.
+\end{itemize}
+\end{addmargin}
+
+\textbf{Set Prediction using Machine Learning} \hfill January 2023 -- March 2023 \\
+\textit{Python, SQL} — \href{https://smashsetprediction.netlify.app/}{smashsetprediction.netlify.app}
+\vspace{-0.5em}
+\begin{addmargin}[1em]{0em}
+\begin{itemize}[leftmargin=*]
+    \item Used hyperparameter tuning and cross-validation to compare an Elastic Net, Decision Tree, Random Forest, and Boosted Tree in predicting \textit{Super Smash Bros.} match outcomes.
+    \item Highlighted that stage selection and player performance history were more predictive than character choice alone, achieving an accuracy of (67.8\%) with a Random Forest model.
+    \item Explored balance and competitive dynamics between characters and stages through variable importance and matchup analysis.
+\end{itemize}
+\end{addmargin}
+
+\textbf{Time Series Forecasting of Global Temperature} \hfill January 2023 -- March 2023 \\
+\textit{R} — \href{https://globtempforecast.netlify.app}{globtempforecast.netlify.app}
+\vspace{-0.5em}
+\begin{addmargin}[1em]{0em}
+\begin{itemize}[leftmargin=*]
+    \item Applied autoregressive models such as SARIMA and TAR to global temperature data spanning 100 years.
+    \item Forecasted global mean temperature over the next 80 years to identify climate trends.
+\end{itemize}
+\end{addmargin}
+
+\vspace{-1em}
+\section*{SKILLS and COURSEWORK}\vspace{-2em}
+\noindent\rule{\textwidth}{1pt}\vspace{-0.5em}
+
+\textbf{Deep Reinforcement Learning}: Q-learning, policy gradients, actor-critic methods, DDPG, PPO, A3C.
+\vspace{-0.5em}
+
+\textbf{Deep Learning}: Neural networks, CNNs, LSTMs, backpropagation, and optimizers including Adam.
+\vspace{-0.5em}
+
+\textbf{Generative Modeling}: Text and image generation with GANs, VAEs, transformers, and diffusion models.
+\vspace{-0.5em}
+
+\textbf{Machine Learning}: Linear regression, decision trees, random forests, gradient boosted trees.
+\vspace{-0.5em}
+
+\textbf{Large-Scale ML}: Distributed training, federated learning, neural network pruning, submodularity.
+\vspace{-0.5em}
+
+\textbf{Stochastic Processes}: Markov chains, MDPs, brownian motion, continuous-time processes.
+\vspace{-0.5em}
+
+\textbf{Time Series}: SARIMA, TAR, GARCH models.
+\vspace{-0.5em}
+
+\textbf{Real Analysis, Abstract Algebra}: Theorems in topology and calculus. Rings, fields, and Galois theory.
+\vspace{-0.5em}
+
+\textbf{Business Finance}: Capital structure, time-value of money, options pricing, and business communication.
+\vspace{-0.5em}
+
+\textbf{Python}: Proficient in Python and machine learning libraries such as Pytorch, Scikit-Learn, Pandas, and Numpy.
+\vspace{-0.5em}
+
+\textbf{Statistical Modeling}: Including autoregressive, survival, non-parametric, and regression models.
+\vspace{-0.5em}
+
+\textbf{Reasoning}: Strong proof-based reasoning skills through abstract mathematics.
+\vspace{-0.5em}
+
+\textbf{Leadership}: Effective communicator and teamworking skills developed through club leadership and tutoring.
+\vspace{-0.5em}
+
+\end{document}
