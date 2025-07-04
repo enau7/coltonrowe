@@ -1,9 +1,10 @@
 :root {
-    --primary-color: #ffffff;
-    --secondary-color: #3498db;
-    --background-color: #1f2127;
+    --primary-color: rgb(70, 100, 160);
+    --secondary-color: rgb(241, 161, 113);
+    --background-color: rgb(81, 176, 211);
     --text-color: #f5f6fa;
-    --accent-color: #111011;
+    --accent-color: rgb(215, 56, 67);
+    --accent-color-2: rgb(39, 60, 103);
 }
 
 * {
@@ -13,11 +14,28 @@
 }
 
 body {
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: 'Roboto Mono', 'Consolas', 'Courier New', monospace;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
+    letter-spacing: 0.05rem;
     color: var(--text-color);
     background-color: var(--background-color);
+    position: relative;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 1.0; /* Adjust this value to control the overlay opacity */
 }
 
 /* Navigation */
@@ -41,6 +59,7 @@ body {
 .logo {
     font-size: 1.5rem;
     color: var(--text-color);
+    text-shadow: 2px 2px 2px var(--primary-color);
 }
 
 .nav-links {
@@ -52,22 +71,23 @@ body {
 .nav-links a {
     text-decoration: none;
     color: var(--text-color);
+    text-shadow: 2px 2px 2px var(--primary-color);
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 /* Hero Section */
 .hero {
     height: 50vh;
     display: flex;
+    padding-top: 5rem;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 2rem;
     position: relative;
     overflow: hidden;
 }
@@ -78,30 +98,29 @@ body {
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 125%;
     z-index: -1;
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    color: var(--text-color);
+    text-shadow: 4px 4px 4px var(--primary-color);
 }
 
 .hero-content h2 {
     font-size: 6rem;
     margin-bottom: 1rem;
-    color: var(--primary-color);
 }
 
 .hero-content p {
     font-size: 2rem;
-    color: #d0dff0;
 }
 
 .projects {
-    background-color: var(--background-color);
+    background-image: linear-gradient(to bottom, var(--background-color), var(--primary-color));
+    color: var(--text-color);
     padding-bottom: 3rem;
 }
 
@@ -315,7 +334,7 @@ body {
 /* Contact Section */
 .contact {
     padding: 5rem 2rem;
-    background-color: var(--accent-color);
+    background-color: var(--primary-color);
     text-align: center;
 }
 
@@ -340,7 +359,7 @@ body {
 footer {
     text-align: center;
     padding: 2rem;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color-2);
     color: white;
 }
 

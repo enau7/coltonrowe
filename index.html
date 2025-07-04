@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar">
         <div class="nav-content">
-            <h1 class="logo">COLTON ROWE</h1>
+            <h1 class="logo">Colton Rowe</h1>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -21,20 +21,46 @@
 
     <section id="home" class="hero">
         <video autoplay muted loop id="video-background">
-            <source src="media/FallingSand_Bounce.mp4" type="video/mp4">
+            <source src="media/background.mp4" type="video/mp4">
             Your browser does not support the video element.
         </video>
         <div class="hero-content">
-            <h2>COLTON ROWE</h2>
-            <p>Exploring the intersection of technology and mathematics.</p>
+            <h2>Portfolio</h2>
         </div>
     </section>
 
     <section id="projects" class="projects">
         <div class="project-content">
-            <h1 style="font-size: 2rem">Projects</h1>
+            <h1 style="font-size: 2rem; text-shadow: 2px 2px 4px var(--primary-color);">Projects</h1>
         </div>
         <div class="projects-grid">
+            <div class="project-card" id="time-travel-sand-lab">
+                <a href="https://timetravelsandlab.netlify.app/" target="_blank" class="preview-link">
+                    <video autoplay muted loop class="preview-image">
+                        <source src="media/FallingSand_Bounce.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                    <div class="hover-text">
+                        <h2>Time Travel Sand Lab</h2>
+                        <p class="project-date">Jan 2025 - Mar 2025</p>
+                        <p class="project-tech">Love2d, Lua</p>
+                        <p>An interactive sandbox toy with time reversal mechanics.</p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="project-card" id="rewordle">
+                <a href="https://wordnt.netlify.app" target="_blank" class="preview-link">
+                    <iframe class="preview-image" src="https://wordnt.netlify.app" frameborder="0"></iframe>
+                    <div class="hover-text">
+                        <h2>Rewordle</h2>
+                        <p class="project-date">Jan 2022 - Mar 2023</p>
+                        <p class="project-tech">HTML, CSS</p>
+                        <p>A "Wordle"-like web game with a twist.</p>
+                    </div>
+                </a>
+            </div>
+            
             <div class="project-card" id="metadrive">
                 <a href="https://github.com/enau7/metadrive-ppo" target="_blank" class="preview-link">
                     <img class="preview-image" src="media/metadrive.jpg" alt="Metadrive PPO Training">
@@ -42,14 +68,14 @@
                         <h2>Metadrive Autonomous Driving</h2>
                         <p class="project-date">Jan 2025 - Mar 2025</p>
                         <p class="project-tech">Pytorch, Metadrive</p>
-                        <p>Using Proximal Policy Optimization (PPO) to train autonomous driving agents in Metadrive environments.</p>
+                        <p>Used Proximal Policy Optimization (PPO) to train autonomous driving agents in Metadrive environments.</p>
                     </div>
                 </a>
             </div>
             
             <div class="project-card" id="semg">
-                <a href="https://github.com/enau7/semg-keystroke" target="_blank" class="preview-link">
-                    <img class="preview-image" src="media/semg.jpg" alt="sEMG Keystroke Decoding">
+                <a href="https://github.com/enau7/emg2qwerty" target="_blank" class="preview-link">
+                    <img class="preview-image" src="media/emg2querty.jpeg" alt="emg2querty Banner">
                     <div class="hover-text">
                         <h2>sEMG Keystroke Decoding</h2>
                         <p class="project-date">Jan 2025 - Mar 2025</p>
@@ -101,12 +127,12 @@
         <h2>Contact</h2>
         <div class="social-links">
             <a href="https://github.com/enau7" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/coltonrowe/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
         </div>
         <p>coltonjack.rowe@gmail.com</p>
     </section>
 
-    <footer style="background-color: black; color: white; ">
+    <footer style="accent-color: black; color: white; ">
         <p>&copy; 2025 Colton Rowe. All rights reserved.</p>
     </footer>
 
