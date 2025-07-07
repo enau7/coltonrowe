@@ -1,10 +1,11 @@
 :root {
-    --primary-color: rgb(70, 100, 160);
-    --secondary-color: rgb(241, 161, 113);
+    --drop-shadow-color: rgb(70, 100, 160, 1);
+    --highlight-color: rgb(241, 161, 113);
     --background-color: rgb(81, 176, 211);
-    --text-color: #f5f6fa;
-    --accent-color: rgb(215, 56, 67);
-    --accent-color-2: rgb(39, 60, 103);
+    --secondary-color: rgb(70, 100, 160, 1);
+    --text-color: white;
+    --contact-color: rgb(39, 60, 103);
+    --footer-color: black;
 }
 
 * {
@@ -14,8 +15,7 @@
 }
 
 body {
-    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
-    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', 'Liberation Mono', 'Courier New', monospace;
     line-height: 1.6;
     letter-spacing: 0.05rem;
     color: var(--text-color);
@@ -59,7 +59,7 @@ body::after {
 .logo {
     font-size: 1.5rem;
     color: var(--text-color);
-    text-shadow: 2px 2px 2px var(--primary-color);
+    text-shadow: 2px 2px 2px var(--drop-shadow-color);
 }
 
 .nav-links {
@@ -71,7 +71,7 @@ body::after {
 .nav-links a {
     text-decoration: none;
     color: var(--text-color);
-    text-shadow: 2px 2px 2px var(--primary-color);
+    text-shadow: 2px 2px 2px var(--drop-shadow-color);
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -80,11 +80,16 @@ body::after {
     color: var(--text-color);
 }
 
+.banner {
+    height: 10rem;
+    position: relative;
+}
+
 /* Hero Section */
 .hero {
-    height: 50vh;
+    height: 20rem;
     display: flex;
-    padding-top: 5rem;
+    padding: 5rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -106,10 +111,10 @@ body::after {
     position: relative;
     z-index: 1;
     color: var(--text-color);
-    text-shadow: 4px 4px 4px var(--primary-color);
+    text-shadow: 4px 4px 4px var(--drop-shadow-color);
 }
 
-.hero-content h2 {
+.hero-content h1 {
     font-size: 6rem;
     margin-bottom: 1rem;
 }
@@ -119,26 +124,33 @@ body::after {
 }
 
 .projects {
-    background-image: linear-gradient(to bottom, var(--background-color), var(--primary-color));
+    background-image: linear-gradient(to bottom, var(--background-color), var(--secondary-color));
     color: var(--text-color);
     padding-bottom: 3rem;
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 .project-card {
     background: white;
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     aspect-ratio: 1;
+    max-width: 400px;
 }
 
 .project-card:hover {
@@ -159,10 +171,11 @@ body::after {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+    text-shadow: 2px 2px 2px var(--drop-shadow-color);
 }
 
 .project-content h3 {
-    color: var(--primary-color);
+    color: var(--drop-shadow-color);
     margin-bottom: 0.5rem;
 }
 
@@ -173,7 +186,7 @@ body::after {
 }
 
 .project-tech {
-    color: var(--secondary-color);
+    color: var(--highlight-color);
     font-weight: 750;
     margin-bottom: 1rem;
     font-size: 0.9rem;
@@ -209,7 +222,7 @@ body::after {
 .preview-link {
     display: inline-flex;
     align-items: center;
-    color: var(--secondary-color);
+    color: var(--highlight-color);
     text-decoration: none;
     font-weight: 500;
     margin-top: auto;
@@ -250,7 +263,7 @@ body::after {
 .project-link {
     display: inline-flex;
     align-items: center;
-    color: var(--secondary-color);
+    color: var(--highlight-color);
     text-decoration: none;
     font-weight: 500;
     margin-top: auto;
@@ -263,7 +276,7 @@ body::after {
 }
 
 .project-link:hover {
-    color: var(--primary-color);
+    color: var(--drop-shadow-color);
 }
 
 .project-preview {
@@ -327,14 +340,14 @@ body::after {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 /* Contact Section */
 .contact {
     padding: 5rem 2rem;
-    background-color: var(--primary-color);
+    background-color: var(--contact-color);
     text-align: center;
 }
 
@@ -342,24 +355,23 @@ body::after {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-top: 2rem;
 }
 
 .social-icon {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: var(--text-color);
     transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: var(--secondary-color);
+    color: var(--highlight-color);
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 2rem;
-    background-color: var(--accent-color-2);
+    background-color: var(--footer-color);
     color: white;
 }
 

@@ -9,6 +9,10 @@
 </head>
 <body>
     <nav class="navbar">
+        <video autoplay muted loop id="video-background">
+            <source src="media/background.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
         <div class="nav-content">
             <h1 class="logo">Colton Rowe</h1>
             <ul class="nav-links">
@@ -19,19 +23,90 @@
         </div>
     </nav>
 
-    <section id="home" class="hero">
-        <video autoplay muted loop id="video-background">
-            <source src="media/background.mp4" type="video/mp4">
-            Your browser does not support the video element.
-        </video>
+    <section style="height: 5rem;" id="home"></section>
+
+    <section hero class="hero">
         <div class="hero-content">
-            <h2>Portfolio</h2>
+            <h1>Colton Rowe</h1>
+            <p>Aspiring ML Engineer | UCLA Masters Student </p>
         </div>
     </section>
 
     <section id="projects" class="projects">
         <div class="project-content">
             <h1 style="font-size: 2rem; text-shadow: 2px 2px 4px var(--primary-color);">Projects</h1>
+        </div>
+        <div class="project-content">
+            <h2 style="font-size: 1.5rem; text-shadow: 2px 2px 4px var(--primary-color);">Deep Learning and Neural Networks</h1>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" id="metadrive">
+                <a href="https://github.com/enau7/metadrive-ppo" target="_blank" class="preview-link">
+                    <img class="preview-image" src="media/metadrive.jpg" alt="Metadrive PPO Training">
+                    <div class="hover-text">
+                        <h2>Metadrive Autonomous Driving</h2>
+                        <p class="project-date">Jan 2025 - Mar 2025</p>
+                        <p class="project-tech">Pytorch, Metadrive</p>
+                        <p>Used Proximal Policy Optimization (PPO) to train autonomous driving agents in Metadrive environments.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-card" id="semg">
+                <a href="https://github.com/enau7/emg2qwerty" target="_blank" class="preview-link">
+                    <img class="preview-image" src="media/emg2querty.jpeg" alt="emg2querty Banner">
+                    <div class="hover-text">
+                        <h2>sEMG Keystroke Decoding</h2>
+                        <p class="project-date">Jan 2025 - Mar 2025</p>
+                        <p class="project-tech">Pytorch, Stable-Baselines3</p>
+                        <p>Implemented using Stable-Baselines3 framework to compare CNN, RNN, and LSTM hybrid models for keystroke decoding from sEMG data.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="project-content">
+            <h2 style="font-size: 1.5rem; text-shadow: 2px 2px 4px var(--primary-color);">Statistics and Traditional ML</h1>
+        </div>
+        <div class="projects-grid">
+            
+            <div class="project-card" id="tv-popularity">
+                <a href="https://tv-popularity.netlify.app/" target="_blank" class="preview-link">
+                    <img class="preview-image" src="media/imdb.jpg" alt="TV Popularity Prediction Banner">
+                    <div class="hover-text">
+                        <h2>TV and Movie Popularity Prediction</h2>
+                        <p class="project-date">Apr 2023 - Jun 2023</p>
+                        <p class="project-tech">Python, Streamlit</p>
+                        <p>A predictive web app to estimate IMDb ratings using Streamlit and Scikit-learn by scraping and parsing data from IMDb.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-card" id="tempforecast">
+                <a href="https://globtempforecast.netlify.app" target="_blank" class="preview-link">
+                    <img class="preview-image" src="media/climate_change.jpg" alt="Temperature Forecast Banner">
+                    <div class="hover-text">
+                        <h2>Time Series Forecasting of Global Temperature</h2>
+                        <p class="project-date">Jan 2023 - Mar 2023</p>
+                        <p class="project-tech">R</p>
+                        <p>Applying SARIMA and TAR models to 100 years of global temperature data to forecast global mean temperature trends for the next 80 years</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-card" id="smashsetprediction">
+                <a href="https://smashsetprediction.netlify.app/" target="_blank" class="preview-link">
+                    <img class="preview-image" src="media/smash_banner.png" alt="Smash Set Prediction Banner">
+                    <div class="hover-text">
+                        <h2>Set Prediction using Machine Learning</h2>
+                        <p class="project-date">Jan 2023 - Mar 2023</p>
+                <p class="project-tech">Python, SQL</p>
+                        <p>Predicting Super Smash Bros. match outcomes using Elastic Net, Decision Tree, Random Forest, and Boosted Tree models.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="project-content">
+            <h2 style="font-size: 1.5rem; text-shadow: 2px 2px 4px var(--primary-color);">Just for Fun</h1>
         </div>
         <div class="projects-grid">
             <div class="project-card" id="time-travel-sand-lab">
@@ -57,66 +132,6 @@
                         <p class="project-date">Jan 2022 - Mar 2023</p>
                         <p class="project-tech">HTML, CSS</p>
                         <p>A "Wordle"-like web game with a twist.</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="project-card" id="metadrive">
-                <a href="https://github.com/enau7/metadrive-ppo" target="_blank" class="preview-link">
-                    <img class="preview-image" src="media/metadrive.jpg" alt="Metadrive PPO Training">
-                    <div class="hover-text">
-                        <h2>Metadrive Autonomous Driving</h2>
-                        <p class="project-date">Jan 2025 - Mar 2025</p>
-                        <p class="project-tech">Pytorch, Metadrive</p>
-                        <p>Used Proximal Policy Optimization (PPO) to train autonomous driving agents in Metadrive environments.</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="project-card" id="semg">
-                <a href="https://github.com/enau7/emg2qwerty" target="_blank" class="preview-link">
-                    <img class="preview-image" src="media/emg2querty.jpeg" alt="emg2querty Banner">
-                    <div class="hover-text">
-                        <h2>sEMG Keystroke Decoding</h2>
-                        <p class="project-date">Jan 2025 - Mar 2025</p>
-                        <p class="project-tech">Pytorch, Stable-Baselines3</p>
-                        <p>Implemented using Stable-Baselines3 framework to compare CNN, RNN, and LSTM hybrid models for keystroke decoding from sEMG data.</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="project-card" id="tv-popularity">
-                <a href="https://tv-popularity.netlify.app/" target="_blank" class="preview-link">
-                    <img class="preview-image" src="media/imdb.jpg" alt="TV Popularity Prediction Banner">
-                    <div class="hover-text">
-                        <h2>TV and Movie Popularity Prediction</h2>
-                        <p class="project-date">Apr 2023 - Jun 2023</p>
-                        <p class="project-tech">Python, Streamlit</p>
-                        <p>A predictive web app to estimate IMDb ratings using Streamlit and Scikit-learn by scraping and parsing data from IMDb.</p>
-                    </div>
-                </a>
-            </div>
-            
-            <div class="project-card" id="tempforecast">
-                <a href="https://globtempforecast.netlify.app" target="_blank" class="preview-link">
-                    <img class="preview-image" src="media/climate_change.jpg" alt="Temperature Forecast Banner">
-                    <div class="hover-text">
-                        <h2>Time Series Forecasting of Global Temperature</h2>
-                        <p class="project-date">Jan 2023 - Mar 2023</p>
-                        <p class="project-tech">R</p>
-                        <p>Applying SARIMA and TAR models to 100 years of global temperature data to forecast global mean temperature trends for the next 80 years</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="project-card" id="smashsetprediction">
-                <a href="https://smashsetprediction.netlify.app/" target="_blank" class="preview-link">
-                    <img class="preview-image" src="media/smash_banner.png" alt="Smash Set Prediction Banner">
-                    <div class="hover-text">
-                        <h2>Set Prediction using Machine Learning</h2>
-                        <p class="project-date">Jan 2023 - Mar 2023</p>
-                <p class="project-tech">Python, SQL</p>
-                        <p>Predicting Super Smash Bros. match outcomes using Elastic Net, Decision Tree, Random Forest, and Boosted Tree models.</p>
                     </div>
                 </a>
             </div>
