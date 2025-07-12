@@ -14,6 +14,16 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Borsok;
+    src: url('media/borsok-font/borsok-font.otf') format('opentype'),
+        url('media/borsok-font/borsok.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 body {
     font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', 'Liberation Mono', 'Courier New', monospace;
     line-height: 1.6;
@@ -40,10 +50,11 @@ body::after {
 
 /* Navigation */
 .navbar {
+    backdrop-filter: blur(4px);
     position: fixed;
     width: 100%;
-    background-color: var(--background-color);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: transparent;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
     z-index: 1000;
 }
 
@@ -57,9 +68,11 @@ body::after {
 }
 
 .logo {
+    font-family: Borsok;
     font-size: 1.5rem;
-    color: var(--text-color);
-    text-shadow: 2px 2px 2px var(--drop-shadow-color);
+    transform: translateX(2.5rem) translateY(0.3rem) scale(1.5);
+    color: rgb(255, 204, 0);
+    text-shadow: 2px 2px 2px rgb(217, 41, 82);
 }
 
 .nav-links {
@@ -166,6 +179,7 @@ body::after {
 }
 
 .project-content {
+    font-family: Borsok;
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
